@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/* Vendor Prefixing */
+@mixin border-radius($arguments...) {
+    -webkit-border-radius: $arguments;
+    -moz-border-radius: $arguments;
+    -ms-border-radius: $arguments;
+    border-radius: $arguments;
+}
+
+@mixin box-shadow($arguments...) {
+    -webkit-box-shadow: $arguments;
+    box-shadow: $arguments;
+}
+
+@mixin column-count($arguments...) {
+    -moz-column-count: $arguments;
+    -webkit-column-count: $arguments;
+    column-count: $arguments;
+}
+
+@mixin column-gap($arguments...) {
+    -moz-column-gap: $arguments;
+    -webkit-column-gap: $arguments;
+    column-gap: $arguments;
+}
+
+@mixin box-sizing($arguments...) {
+    -moz-box-sizing: $arguments;
+    -webkit-box-sizing: $arguments;
+    box-sizing: $arguments;
+}
+
+@mixin transition($arguments...) {
+    -webkit-transition: $arguments;
+    -moz-transition: $arguments;
+    -ms-transition: $arguments;
+    -o-transition: $arguments;
+    transition: $arguments;
+}
+
+@mixin transition-property($arguments...) {
+    -webkit-transition-property: $arguments;
+    transition: $arguments;
+}
+
+@mixin transform($arguments...) {
+    -moz-transform: $arguments;
+    -webkit-transform: $arguments;
+    -o-transform: $arguments;
+    -ms-transform: $arguments;
+    transform: $arguments;
+}
+
+@mixin transform-origin($arguments...) {
+    -moz-transform-origin: $arguments;
+    -webkit-transform-origin: $arguments;
+    -o-transform-origin: $arguments;
+    -ms-transform-origin: $arguments;
+    transform-origin: $arguments;
+}
+
+@mixin transform-style($arguments...) {
+    -webkit-transform-style: $arguments;
+    transform-style: $arguments;
+}
+
+@mixin animation($arguments...) {
+    -webkit-animation: $arguments;
+    animation: $arguments;
+}
+
+@mixin filter($arguments...) {
+    -webkit-filter: $arguments;
+    filter: $arguments;
+}
+
+@mixin backface-visibility($arguments...) {
+    -webkit-backface-visibility: $arguments;
+    backface-visibility: $arguments;
+}
+
+@mixin perspective($arguments...) {
+    -webkit-perspective: $arguments;
+    perspective: $arguments;
+}
+
+@mixin keyframes( $animationName )
+{
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+/* extra */
+@mixin animation-name($arguments...) {
+    -webkit-animation-name: $arguments;
+    animation-name: $arguments;
+}
+
+@mixin animation-duration($arguments...) {
+    -webkit-animation-duration: $arguments;
+    animation-duration: $arguments;
+}
+
+@mixin animation-iteration-count($arguments...) {
+    -webkit-animation-iteration-count: $arguments;
+    animation-iteration-count: $arguments;
+}
+
+@mixin animation-direction($arguments...) {
+    -webkit-animation-direction: $arguments;
+    animation-direction: $arguments;
+}
+
+@mixin animation-timing-function($arguments...) {
+    -webkit-animation-timing-function: $arguments;
+    animation-timing-function: $arguments;
+}
+
+@mixin animation-delay($arguments...) {
+    -webkit-animation-delay: $arguments;
+    animation-delay: $arguments;
+}
+
+/* custom */
+@mixin multiple-columns($columns, $gap) {
+    @include column-count($columns);
+    @include column-gap($gap);
+}
+
+.spacer-y-1 {
+    display: block;
+    height:1em;
+}

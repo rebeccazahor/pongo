@@ -1,0 +1,133 @@
+/* Vendor Prefixing */
+/* extra */
+/* custom */
+.spacer-y-1 {
+  display: block;
+  height: 1em; }
+
+/* variables */
+html {
+  overflow-x: hidden; }
+
+body {
+  background-color: #ffffff;
+  background-image: url(../img/bg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  width: 100%;
+  /* KLASSEN */
+  /* ID */
+  /*CUSTOM*/ }
+  body a:link, body a:active, body a:visited {
+    text-decoration: none;
+    color: #BA008E;
+    outline: none;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease; }
+  body a:hover {
+    text-decoration: underline;
+    opacity: 0.7; }
+  body a .no-hover-fx:hover, body a.no-hover-fx:hover {
+    opacity: 1; }
+  body img.no-hover-fx:hover {
+    opacity: 1; }
+  body .container-fullsize {
+    min-height: 100vh; }
+  body .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* Default for 1600x900 videos 16:9 ratio*/
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden; }
+    body .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  body .pixel-border {
+    border: 1px solid #BA008E; }
+  body .row-wrapper,
+  body .row-footer-wrapper {
+    margin: 0 5px; }
+  body .social-icon {
+    margin: 0 3px; }
+  body .small-font {
+    font-size: 0.8em; }
+  body .white-popup {
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto; }
+  body .slimscroll {
+    padding-right: 1em; }
+  body #socials {
+    margin: 20px 0; }
+
+/* Media Queries
+xs = Extra small devices (phones, less than 33.9em)
+sm = Small devices (tablets, 34em and up to 47.9em)
+md = Medium devices (desktops, 48em and up to 61.9em)
+lg = Large devices (large desktops, 62em and up)
+*/
+/* XS */
+@media (max-width: 33.9em) {
+  body .events .event-row {
+    margin-bottom: 1em; } }
+/* SM */
+/* MD */
+/* LG */
+/* Device Media Queries
+iOS portrait bg - approx. 768x1150 px
+iOS landscape bg - approx. 1024x953 px
+*/
+/* iPhone4 - Portrait */
+@media only screen and (min-device-width: 20em) and (max-device-width: 33.9em) and (orientation: portrait) {
+  body {
+    background-image: url(../img/bg-portrait.jpg);
+    background-position: top center;
+    background-size: contain; } }
+/* iPhone4 - Landscape */
+@media only screen and (min-device-width: 20em) and (max-device-width: 33.9em) and (orientation: landscape) {
+  body {
+    background-image: url(../img/bg-landscape.jpg);
+    background-position: top center;
+    background-size: contain; } }
+/* iPhone5+ Portrait */
+@media only screen and (min-device-width: 34em) and (max-device-width: 47.9em) and (orientation: portrait) {
+  body {
+    background-image: url(../img/bg-portrait.jpg);
+    background-position: top center;
+    background-size: contain; } }
+/* iPhone5+ Landscape */
+@media only screen and (min-device-width: 34em) and (max-device-width: 47.9em) and (orientation: landscape) {
+  body {
+    background-image: url(../img/bg-landscape.jpg);
+    background-position: top center;
+    background-size: contain; } }
+/* iPad portrait */
+@media only screen and (min-device-width: 48em) and (max-device-width: 61.9em) and (orientation: portrait) {
+  body {
+    background-image: url(../img/bg-portrait.jpg);
+    background-position: top center;
+    background-size: contain; } }
+/* iPad landscape */
+@media only screen and (min-device-width: 48em) and (max-device-width: 61.9em) and (orientation: landscape) {
+  body {
+    background-image: url(../img/bg-landscape.jpg);
+    background-position: top center;
+    background-size: contain; } }
+
+/*# sourceMappingURL=main-style.css.map */
